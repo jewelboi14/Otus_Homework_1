@@ -11,6 +11,8 @@ final class CountryViewModel: ObservableObject {
     
     //MARK: - Published Properties
     
+    @Published var selectedCountry: Country?
+    
     @Published var countries = [
         Country(name: "USA"),
         Country(name: "Russia"),

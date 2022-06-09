@@ -12,17 +12,25 @@ struct SecondTabItemView: View {
     @ObservedObject var viewModel: CountryViewModel
     
     var body: some View {
-        NavigationView {
-            List(viewModel.countries) { country in
-                NavigationLink(country.name, destination: CountryDetailView(name: country.name))
+        if viewModel.selectedCountry != nil {
+            NavigationView {
+                List(viewModel.countries, id: \.self, selection: $viewModel.selectedCountry) { country in
+                    NavigationLink(country.name, destination: CountryDetailView(name: country.name))
+                    
+                        
+                }
+                .navigationTitle("Countries")
             }
-            .navigationTitle("Countries")
+        } else {
+            NavigationView {
+                List(viewModel.countries) { country in
+                    NavigationLink(country.name, destination: CountryDetailView(name: country.name))
+                        .tag(country)
+                        
+                }
+                .navigationTitle("Countries")
+            }
         }
-    }
-}
-
-struct SecondTabItemView_Previews: PreviewProvider {
-    static var previews: some View {
-        SecondTabItemView(viewModel: CountryViewModel())
+        
     }
 }

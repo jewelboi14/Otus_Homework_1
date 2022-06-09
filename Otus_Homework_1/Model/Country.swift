@@ -7,3 +7,7 @@
 
 import Foundation
 
+struct Country: Identifiable, Hashable {
+    let name: String
+    let id = UUID()
+}

@@ -8,8 +8,23 @@
 import SwiftUI
 
 struct ThirdTabItemView: View {
+    
+    @State private var showingSheet = false
+    
+    @State private var image = UIImage(systemName: "star")
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button("Show Sheet") {
+                    showingSheet.toggle()
+                }
+                .sheet(isPresented: $showingSheet) {
+                    VStack {
+                        UIKitView(image: $image)
+                            .frame(width: 50, height: 50, alignment: .center)
+                        Text("Hey! It looks like modal view!")
+                    }
+                    
+                }
     }
 }
 

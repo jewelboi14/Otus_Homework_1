@@ -8,13 +8,38 @@
 import SwiftUI
 
 struct FirstTabItemView: View {
+    
+    @Binding var selection: Int
+    
+    @ObservedObject var viewModel: CountryViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Button {
+                self.selection = 1
+            } label: {
+                Text("To country list")
+                    .foregroundColor(.white)
+            }
+            .padding()
+            .background(.orange)
+            .cornerRadius(6)
+            
+            Button {
+                self.selection = 1
+                self.viewModel.selectedCountry = viewModel.countries[0]
+            } label: {
+                Text("Navigate to the country from country list")
+                    .foregroundColor(.white)
+            }
+            .padding()
+            .background(.blue)
+            .cornerRadius(6)
+        }
+        
+
+            
+        
     }
 }
 
-struct FirstTabItemView_Previews: PreviewProvider {
-    static var previews: some View {
-        FirstTabItemView()
-    }
-}

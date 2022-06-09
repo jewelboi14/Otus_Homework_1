@@ -11,6 +11,13 @@
 		8B47F28327CBB16500DC5CE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B47F28227CBB16500DC5CE3 /* ContentView.swift */; };
 		8B47F28527CBB16900DC5CE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B47F28427CBB16900DC5CE3 /* Assets.xcassets */; };
 		8B47F28827CBB16900DC5CE3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B47F28727CBB16900DC5CE3 /* Preview Assets.xcassets */; };
+		8B47F29327CBB32700DC5CE3 /* FirstTabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B47F29227CBB32700DC5CE3 /* FirstTabItemView.swift */; };
+		8B47F29527CBB33F00DC5CE3 /* SecondTabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B47F29427CBB33F00DC5CE3 /* SecondTabItemView.swift */; };
+		8B47F29727CBB34D00DC5CE3 /* ThirdTabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B47F29627CBB34D00DC5CE3 /* ThirdTabItemView.swift */; };
+		8B47F29B27CBB8A800DC5CE3 /* CountryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B47F29A27CBB8A800DC5CE3 /* CountryDetailView.swift */; };
+		8B47F29D27CBB8E200DC5CE3 /* CountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B47F29C27CBB8E200DC5CE3 /* CountryViewModel.swift */; };
+		8B47F2A027CBB8F500DC5CE3 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B47F29F27CBB8F500DC5CE3 /* Country.swift */; };
+		8B47F2A627CBD94B00DC5CE3 /* UIKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B47F2A527CBD94B00DC5CE3 /* UIKitView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		8B47F28227CBB16500DC5CE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8B47F28427CBB16900DC5CE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B47F28727CBB16900DC5CE3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8B47F29227CBB32700DC5CE3 /* FirstTabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabItemView.swift; sourceTree = "<group>"; };
+		8B47F29427CBB33F00DC5CE3 /* SecondTabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabItemView.swift; sourceTree = "<group>"; };
+		8B47F29627CBB34D00DC5CE3 /* ThirdTabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTabItemView.swift; sourceTree = "<group>"; };
+		8B47F29A27CBB8A800DC5CE3 /* CountryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailView.swift; sourceTree = "<group>"; };
+		8B47F29C27CBB8E200DC5CE3 /* CountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewModel.swift; sourceTree = "<group>"; };
+		8B47F29F27CBB8F500DC5CE3 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		8B47F2A527CBD94B00DC5CE3 /* UIKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +66,9 @@
 			isa = PBXGroup;
 			children = (
 				8B47F28027CBB16500DC5CE3 /* Otus_Homework_1App.swift */,
-				8B47F28227CBB16500DC5CE3 /* ContentView.swift */,
+				8B47F2A127CBB8F900DC5CE3 /* Model */,
+				8B47F29927CBB37600DC5CE3 /* View */,
+				8B47F29E27CBB8E600DC5CE3 /* ViewModel */,
 				8B47F28427CBB16900DC5CE3 /* Assets.xcassets */,
 				8B47F28627CBB16900DC5CE3 /* Preview Content */,
 			);
@@ -65,6 +81,67 @@
 				8B47F28727CBB16900DC5CE3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8B47F29827CBB35500DC5CE3 /* TabBarViews */ = {
+			isa = PBXGroup;
+			children = (
+				8B47F2A427CBBF0A00DC5CE3 /* FirstTabItem */,
+				8B47F2A227CBB9D100DC5CE3 /* SecondTabItem */,
+				8B47F2A327CBBEFF00DC5CE3 /* ThirdTabItem */,
+			);
+			path = TabBarViews;
+			sourceTree = "<group>";
+		};
+		8B47F29927CBB37600DC5CE3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B47F28227CBB16500DC5CE3 /* ContentView.swift */,
+				8B47F29827CBB35500DC5CE3 /* TabBarViews */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B47F29E27CBB8E600DC5CE3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8B47F29C27CBB8E200DC5CE3 /* CountryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8B47F2A127CBB8F900DC5CE3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B47F29F27CBB8F500DC5CE3 /* Country.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B47F2A227CBB9D100DC5CE3 /* SecondTabItem */ = {
+			isa = PBXGroup;
+			children = (
+				8B47F29A27CBB8A800DC5CE3 /* CountryDetailView.swift */,
+				8B47F29427CBB33F00DC5CE3 /* SecondTabItemView.swift */,
+			);
+			path = SecondTabItem;
+			sourceTree = "<group>";
+		};
+		8B47F2A327CBBEFF00DC5CE3 /* ThirdTabItem */ = {
+			isa = PBXGroup;
+			children = (
+				8B47F29627CBB34D00DC5CE3 /* ThirdTabItemView.swift */,
+				8B47F2A527CBD94B00DC5CE3 /* UIKitView.swift */,
+			);
+			path = ThirdTabItem;
+			sourceTree = "<group>";
+		};
+		8B47F2A427CBBF0A00DC5CE3 /* FirstTabItem */ = {
+			isa = PBXGroup;
+			children = (
+				8B47F29227CBB32700DC5CE3 /* FirstTabItemView.swift */,
+			);
+			path = FirstTabItem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +214,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B47F29B27CBB8A800DC5CE3 /* CountryDetailView.swift in Sources */,
+				8B47F29327CBB32700DC5CE3 /* FirstTabItemView.swift in Sources */,
+				8B47F29727CBB34D00DC5CE3 /* ThirdTabItemView.swift in Sources */,
 				8B47F28327CBB16500DC5CE3 /* ContentView.swift in Sources */,
+				8B47F2A027CBB8F500DC5CE3 /* Country.swift in Sources */,
 				8B47F28127CBB16500DC5CE3 /* Otus_Homework_1App.swift in Sources */,
+				8B47F2A627CBD94B00DC5CE3 /* UIKitView.swift in Sources */,
+				8B47F29D27CBB8E200DC5CE3 /* CountryViewModel.swift in Sources */,
+				8B47F29527CBB33F00DC5CE3 /* SecondTabItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
